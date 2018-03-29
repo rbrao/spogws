@@ -1,0 +1,87 @@
+
+<body id="mainPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="nav navbar-nav" href="#mainPage">
+		<%= image_tag "spog_150_white.png" %>
+      </a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#solutions">SOLUTIONS</a></li>
+        <li><a href="#about">FEATURES</a></li>
+        <li><a href="#pricing">PRICING</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron text-center">
+  <h1>Spogworks</h1> 
+  <p>Single-pane view of WebSite Performance !</p> 
+<!--  <form class="form-inline">
+    <input type="email" class="form-control" size="50" placeholder="Email Address" required>
+    <button type="button" class="btn btn-info">Subscribe</button>
+  </form> -->
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div id="portfolio" class="container-fluid text-center bg-grey">
+  <h4>Website Performance - From an end-user's perspective !!</h4>
+  <div class="row text-center slideanim">
+      <div class="thumbnail">
+	    <%= image_tag "SW-Full.png" %>
+        <p><strong>Website Performance KPIs</strong></p>
+      </div>
+  </div><br>
+  
+  <h2>Intuitive Visualizations</h2>
+  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+      	<div class="thumbnail">
+		<iframe id="form" height="650" width="1300" src="http://www.spogworks.com:8000/dashboard/app"></iframe>
+        	<p>Location based visualizations</p>
+      	</div>
+      </div>
+      <div class="item">
+      	<div class="thumbnail">
+		<iframe id="form" height="650" width="1300" src="http://www.spogworks.com:8000/app/dashboard/web"></iframe>
+        	<p>Compute performance of Application layers</p>
+      	</div>
+      </div>
+      <div class="item">
+      	<div class="thumbnail">
+		<iframe id="form" height="650" width="1300" src="http://www.spogworks.com:8000/app/dashboard/oracle"></iframe>
+        	<p>Trend view of KPIs in Realtime</p>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
